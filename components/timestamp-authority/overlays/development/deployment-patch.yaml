@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: timestamp-authority
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/japower-tenant/timestamp-authority/timestamp-authority@sha256:ef51d86d9143aee90043cc5699fcd994e60fd58389dc51d14a1d9c6737894c4a
+        name: container-image
+        resources: {}
+status: {}
