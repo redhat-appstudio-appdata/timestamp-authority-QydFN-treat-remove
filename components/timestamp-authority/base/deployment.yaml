@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: timestamp-authority
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/japower-tenant/timestamp-authority/timestamp-authority@sha256:ef51d86d9143aee90043cc5699fcd994e60fd58389dc51d14a1d9c6737894c4a
         imagePullPolicy: Always
         name: container-image
         ports:
